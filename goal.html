@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitTrack - Progress</title>
+  <link rel="stylesheet" href="progress.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div>
+        <div class="logo">FitTrack</div>
+        <ul class="nav">
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="logout.html">Log workout</a></li>
+          <li><a href="exercise.html">Exercise library</a></li>
+          <li><a href="goal.html">Goals</a></li>
+          <li><a href="progress.html" class="active">Progress</a></li>
+          <li><a href="admin.html">Admin panel</a></li>
+        </ul>
+      </div>
+
+      <div class="profile">
+        <div class="avatar">JS</div>
+        <div>
+          <h4>Jake Smith</h4>
+          <p>Log out</p>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <h1>Progress</h1>
+      </div>
+
+      <section class="stats">
+        <div class="card">
+          <div class="stat-title">Total workouts</div>
+          <div class="stat-value">48</div>
+          <div class="stat-sub">Completed</div>
+        </div>
+        <div class="card">
+          <div class="stat-title">Total hours</div>
+          <div class="stat-value">134</div>
+          <div class="stat-sub">Across all sessions</div>
+        </div>
+        <div class="card">
+          <div class="stat-title">Avg. session</div>
+          <div class="stat-value">38 min</div>
+          <div class="stat-sub">Per workout</div>
+        </div>
+        <div class="card">
+          <div class="stat-title">Best streak</div>
+          <div class="stat-value">14 days</div>
+          <div class="stat-sub">Current record</div>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <div class="card">
+          <div class="section-title">Monthly workouts</div>
+          <div class="bar-chart">
+            <div class="bar-group">
+              <div class="bar" style="height: 52%;"></div>
+              <div class="month">Jan</div>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 40%;"></div>
+              <div class="month">Feb</div>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 72%;"></div>
+              <div class="month">Mar</div>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 90%;"></div>
+              <div class="month">Apr</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="section-title">Personal bests</div>
+
+          <div class="record-item">
+            <span>Longest run</span>
+            <strong>12.4 km • 15 Mar</strong>
+          </div>
+
+          <div class="record-item">
+            <span>Max bench press</span>
+            <strong>70 kg • 28 Feb</strong>
+          </div>
+
+          <div class="record-item">
+            <span>Most active day</span>
+            <strong>3 sessions • 5 Apr</strong>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
