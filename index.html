@@ -1,1 +1,168 @@
-<p>Hello world</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitTrack Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div>
+        <div class="logo">FitTrack</div>
+        <ul class="nav">
+          <li><a href="#" class="active">Dashboard</a></li>
+          <li><a href="#">Log workout</a></li>
+          <li><a href="#">Exercise library</a></li>
+          <li><a href="#">Stats</a></li>
+          <li><a href="#">Progress</a></li>
+          <li><a href="#">Admin panel</a></li>
+        </ul>
+      </div>
+
+      <div class="profile">
+        <div class="avatar">JS</div>
+        <div class="profile-info">
+          <h4>Jake Smith</h4>
+          <p>Level 4</p>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <h1>Dashboard</h1>
+        <button class="btn" id="logWorkoutBtn">+ Log workout</button>
+      </div>
+
+      <section class="stats">
+        <div class="card">
+          <div class="stat-title">Workouts this week</div>
+          <div class="stat-value">4</div>
+          <div class="stat-sub">1 from last week</div>
+        </div>
+
+        <div class="card">
+          <div class="stat-title">Calories burned</div>
+          <div class="stat-value">2,340</div>
+          <div class="stat-sub">of 2,500 goal</div>
+        </div>
+
+        <div class="card">
+          <div class="stat-title">Active minutes</div>
+          <div class="stat-value">185</div>
+          <div class="stat-sub">150 min goal met</div>
+        </div>
+
+        <div class="card">
+          <div class="stat-title">Current streak</div>
+          <div class="stat-value">7 days</div>
+          <div class="stat-sub">Keep it up</div>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <div class="card">
+          <div class="section-title">Weekly activity</div>
+          <div class="bar-chart">
+            <div class="bar-group">
+              <div class="bar light" style="height: 35%;"></div>
+              <div class="day">Mon</div>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 68%;"></div>
+              <div class="day">Tue</div>
+            </div>
+            <div class="bar-group">
+              <div class="bar light" style="height: 18%;"></div>
+              <div class="day">Wed</div>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 82%;"></div>
+              <div class="day">Thu</div>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 60%;"></div>
+              <div class="day">Fri</div>
+            </div>
+            <div class="bar-group">
+              <div class="bar light" style="height: 12%;"></div>
+              <div class="day">Sat</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="section-title">Active goals</div>
+
+          <div class="goal-row">
+            <div class="goal-header">
+              <span>Run 20 km this week</span>
+              <span>72%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill green" style="width: 72%;"></div>
+            </div>
+          </div>
+
+          <div class="goal-row">
+            <div class="goal-header">
+              <span>Move 3 days</span>
+              <span>50%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill blue" style="width: 50%;"></div>
+            </div>
+          </div>
+
+          <div class="goal-row">
+            <div class="goal-header">
+              <span>Burn over 850 cal</span>
+              <span>85%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-fill orange" style="width: 85%;"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card workouts">
+        <div class="section-title">Recent workouts</div>
+
+        <div class="workout-item">
+          <div>
+            <div class="workout-name">Morning run</div>
+            <div class="workout-meta">5.2 km • 34 min • 320 kcal</div>
+          </div>
+          <div class="workout-meta">Today</div>
+          <div class="tag">Cardio</div>
+        </div>
+
+        <div class="workout-item">
+          <div>
+            <div class="workout-name">Upper body strength</div>
+            <div class="workout-meta">45 min • Moderate intensity</div>
+          </div>
+          <div class="workout-meta">Yesterday</div>
+          <div class="tag">Strength</div>
+        </div>
+
+        <div class="workout-item">
+          <div>
+            <div class="workout-name">Yoga flow</div>
+            <div class="workout-meta">30 min • Flexibility</div>
+          </div>
+          <div class="workout-meta">2 days ago</div>
+          <div class="tag orange-tag">Mobility</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
