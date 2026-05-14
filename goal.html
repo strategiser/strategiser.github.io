@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FitTrack - Progress</title>
-  <link rel="stylesheet" href="progress.css" />
+  <title>FitTrack - My Goals</title>
+  <link rel="stylesheet" href="goal.css" />
 </head>
 <body>
   <div class="app">
@@ -12,11 +12,11 @@
       <div>
         <div class="logo">FitTrack</div>
         <ul class="nav">
-          <li><a href="index.html">Dashboard</a></li>
-          <li><a href="logout.html">Log workout</a></li>
-          <li><a href="exercise.html">Exercise library</a></li>
-          <li><a href="goal.html">Goals</a></li>
-          <li><a href="progress.html" class="active">Progress</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="#">Log workout</a></li>
+          <li><a href="exercise-library.html">Exercise library</a></li>
+          <li><a href="goals.html" class="active">Goals</a></li>
+          <li><a href="#">Progress</a></li>
           <li><a href="admin.html">Admin panel</a></li>
         </ul>
       </div>
@@ -32,75 +32,68 @@
 
     <main class="main">
       <div class="topbar">
-        <h1>Progress</h1>
+        <h1>My goals</h1>
+        <a href="#" class="btn">+ New goal</a>
       </div>
 
-      <section class="stats">
-        <div class="card">
-          <div class="stat-title">Total workouts</div>
-          <div class="stat-value">48</div>
-          <div class="stat-sub">Completed</div>
-        </div>
-        <div class="card">
-          <div class="stat-title">Total hours</div>
-          <div class="stat-value">134</div>
-          <div class="stat-sub">Across all sessions</div>
-        </div>
-        <div class="card">
-          <div class="stat-title">Avg. session</div>
-          <div class="stat-value">38 min</div>
-          <div class="stat-sub">Per workout</div>
-        </div>
-        <div class="card">
-          <div class="stat-title">Best streak</div>
-          <div class="stat-value">14 days</div>
-          <div class="stat-sub">Current record</div>
-        </div>
-      </section>
-
-      <section class="content-grid">
-        <div class="card">
-          <div class="section-title">Monthly workouts</div>
-          <div class="bar-chart">
-            <div class="bar-group">
-              <div class="bar" style="height: 52%;"></div>
-              <div class="month">Jan</div>
-            </div>
-            <div class="bar-group">
-              <div class="bar" style="height: 40%;"></div>
-              <div class="month">Feb</div>
-            </div>
-            <div class="bar-group">
-              <div class="bar" style="height: 72%;"></div>
-              <div class="month">Mar</div>
-            </div>
-            <div class="bar-group">
-              <div class="bar" style="height: 90%;"></div>
-              <div class="month">Apr</div>
-            </div>
+      <section class="goals-list">
+        <div class="goal-card card">
+          <div class="goal-head">
+            <h3>Run 20 km / week</h3>
+            <span class="status active">Active</span>
           </div>
+          <div class="progress">
+            <div class="progress-fill green" style="width: 72%;"></div>
+          </div>
+          <p class="goal-meta">14 km done • 56% weekly • Ends Sunday</p>
         </div>
 
-        <div class="card">
-          <div class="section-title">Personal bests</div>
-
-          <div class="record-item">
-            <span>Longest run</span>
-            <strong>12.4 km • 15 Mar</strong>
+        <div class="goal-card card">
+          <div class="goal-head">
+            <h3>Lose 3 kg</h3>
+            <span class="status active">Active</span>
           </div>
-
-          <div class="record-item">
-            <span>Max bench press</span>
-            <strong>70 kg • 28 Feb</strong>
+          <div class="progress">
+            <div class="progress-fill blue" style="width: 53%;"></div>
           </div>
+          <p class="goal-meta">1.5 kg lost • Long-term goal • Next check-in 7d</p>
+        </div>
 
-          <div class="record-item">
-            <span>Most active day</span>
-            <strong>3 sessions • 5 Apr</strong>
+        <div class="goal-card card">
+          <div class="goal-head">
+            <h3>Bench press 80 kg</h3>
+            <span class="status active">Active</span>
           </div>
+          <div class="progress">
+            <div class="progress-fill orange" style="width: 88%;"></div>
+          </div>
+          <p class="goal-meta">70 kg current • 10 kg remaining • Due in 15 days</p>
+        </div>
+
+        <div class="goal-card card">
+          <div class="goal-head">
+            <h3>Walk 10,000 steps / day</h3>
+            <span class="status completed">Completed</span>
+          </div>
+          <div class="progress">
+            <div class="progress-fill teal" style="width: 100%;"></div>
+          </div>
+          <p class="goal-meta">Goal achieved for 20 days straight</p>
+        </div>
+
+        <div class="goal-card card">
+          <div class="goal-head">
+            <h3>Cycle 50 km / month</h3>
+            <span class="status active">Active</span>
+          </div>
+          <div class="progress">
+            <div class="progress-fill purple" style="width: 34%;"></div>
+          </div>
+          <p class="goal-meta">17 km done • 33 km remaining • Due in 20 days</p>
         </div>
       </section>
     </main>
   </div>
 </body>
 </html>
+
