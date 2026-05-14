@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitTrack - Admin Panel</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <div class="admin-page">
+    <header class="admin-header">
+      <div class="admin-title">FitTrack — Admin panel</div>
+      <a href="dashboard.html" class="btn small-btn">Back to app</a>
+    </header>
+
+    <main class="admin-main">
+      <section class="stats">
+        <div class="card">
+          <div class="stat-title">Total users</div>
+          <div class="stat-value">142</div>
+          <div class="stat-sub">+5 this week</div>
+        </div>
+        <div class="card">
+          <div class="stat-title">Total workouts</div>
+          <div class="stat-value">38</div>
+          <div class="stat-sub">+11 recently</div>
+        </div>
+        <div class="card">
+          <div class="stat-title">Workouts logged</div>
+          <div class="stat-value">1,284</div>
+          <div class="stat-sub">All time</div>
+        </div>
+        <div class="card">
+          <div class="stat-title">Active today</div>
+          <div class="stat-value">23</div>
+          <div class="stat-sub">Users online</div>
+        </div>
+      </section>
+
+      <section class="card admin-section">
+        <div class="section-header">
+          <h2>User management</h2>
+          <button class="btn small-btn">+ Add user</button>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jake Smith</td>
+                <td>jake@email.com</td>
+                <td><span class="tag">Member</span></td>
+                <td><a href="#" class="table-link">Edit</a></td>
+              </tr>
+              <tr>
+                <td>Sarah Kim</td>
+                <td>sarah@email.com</td>
+                <td><span class="tag">Member</span></td>
+                <td><a href="#" class="table-link">Edit</a></td>
+              </tr>
+              <tr>
+                <td>Tom Wu</td>
+                <td>tom@email.com</td>
+                <td><span class="tag orange-tag">Banned</span></td>
+                <td><a href="#" class="table-link">Restore</a></td>
+              </tr>
+              <tr>
+                <td>Mia Chen</td>
+                <td>mia@email.com</td>
+                <td><span class="tag">Member</span></td>
+                <td><a href="#" class="table-link">Edit</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card admin-section">
+        <div class="section-header">
+          <h2>Exercise management</h2>
+          <button class="btn small-btn">+ Add exercise</button>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Exercise name</th>
+                <th>Category</th>
+                <th>Muscle group</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Running</td>
+                <td><span class="tag">Cardio</span></td>
+                <td>Legs</td>
+                <td><a href="#" class="table-link">Edit</a></td>
+              </tr>
+              <tr>
+                <td>Bench press</td>
+                <td><span class="tag">Strength</span></td>
+                <td>Chest</td>
+                <td><a href="#" class="table-link">Edit</a></td>
+              </tr>
+              <tr>
+                <td>Yoga flow</td>
+                <td><span class="tag orange-tag">Flexibility</span></td>
+                <td>Full body</td>
+                <td><a href="#" class="table-link">Edit</a></td>
+              </tr>
+              <tr>
+                <td>Cycling</td>
+                <td><span class="tag">Cardio</span></td>
+                <td>Legs</td>
+                <td><a href="#" class="table-link">Edit</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
