@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitTrack - Logout</title>
+  <link rel="stylesheet" href="logout.css" />
+</head>
+<body>
+  <div class="logout-wrapper">
+    <div class="logout-card">
+      <div class="logo">FitTrack</div>
+      <h1>You have been logged out</h1>
+      <p>Thanks for using FitTrack. See you next time.</p>
+
+      <div class="logout-actions">
+        <a href="dashboard.html" class="btn">Log in again</a>
+        <a href="index.html" class="btn secondary-btn">Go to home</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
